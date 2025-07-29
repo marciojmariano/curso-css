@@ -15,3 +15,23 @@ input {
     /* Shorthand padding */
     padding: 4px 6px 5px 7px;
 }
+
+.header-paginas {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: darkolivegreen;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: darkolivegreen;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: darkolivegreen;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: darkolivegreen;
+
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+}
