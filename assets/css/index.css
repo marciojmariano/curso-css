@@ -5,33 +5,58 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input {
-    /* top, left, bottom, right, topo, direita, base, esquerda */
-    padding-top: 4px;
-    padding-left: 6px;
-    padding-bottom: 5px;
-    padding-right: 7px;
-
-    /* Shorthand padding */
-    padding: 4px 6px 5px 7px;
+/* Para remover estilos padrão de links e listas */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Define uma cor padrão para os links */
 }
 
-.header-paginas {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: darkolivegreen;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: darkolivegreen;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: darkolivegreen;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-left-color: darkolivegreen;
+ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+}
 
-    padding-top: 6px;
-    padding-left: 6px;
-    padding-bottom: 6px;
-    padding-right: 6px;
+/* Contêiner principal do menu */
+.menu {
+    background-color: #e75d23;
+    display: flex;
+    justify-content: space-between; /* Empurra os filhos para os extremos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 20px; /* Adiciona um espaçamento interno no menu */
+}
+
+/* A lista de links de navegação */
+.menu-paginas {
+    display: flex; /* Torna os <li> flex-items */
+    gap: 15px; /* Cria espaço entre os links */
+}
+
+/* Estilizando os links individualmente para melhor interação */
+.menu-paginas a {
+    display: block; /* Permite que padding funcione corretamente */
+    padding: 8px 10px;
+    color: #fffced;
+    font-weight: bold;
+    background-color:#e75d23;
+    border: 1px solid #e75d23;
+    border-radius: 4px; /* Cantos levemente arredondados */
+    transition: background-color 0.3s, color 0.3s; /* Efeito suave na interação */
+}
+
+/* Efeito visual quando o mouse passa por cima */
+.menu-paginas a:hover {
+    background-color: #87cc6e;
+    border: 1px solid #87cc6e;
+    color: white;
+}
+
+/* Estilo para o link de "Voltar" (opcional, mas bom para consistência) */
+.menu-voltar a {
+    font-weight: bold;
+}
+
+#logo-horizontal {
+    height: 40px;
+    margin-left: 10px;
 }

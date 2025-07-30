@@ -8,27 +8,26 @@
         <link rel="stylesheet" href="assets/css/index.css">
     </head>
     <body>
-        <p><a href="index.html">Voltar para Pagina Inicial</a></p>
-        <div class="header-paginas">
-            <a href="ativi1-sobre.html" target="_self">Sobre a Benedere</a></p>
-        </div>
-        <div>
-            <a href="ativ1-cadastrocliente.html" target="_self">Cadastre-se</a></p>
-        </div>
-        <div>
-            <a href="ativ1-login.html" target="_self">Login</a>
-        </div>
-        <div>
-            <a href="ativ1-cardapio.html" target="_self">Cardápio</a>
-        </div>
-        <div>
-            <a href="ativ1-fichatecnica.html" target="_self">Fichas Técnicas de Produção</a>
-        </div>
-        <div>
-            <a href="ativ1-personalizadas.html" target="_self">Dietas Personalizadas</a>
-        </div>
-        <div>
-            <a href="ativi1-tabelanutricional.html" target="_self">Tabela Nutricional</a>
-        </div>
+        <header class="menu">
+            <div class="menu-voltar">
+                <!-- O ideal é que o "voltar" seja o logo do site -->
+                <a href="index.html">
+                    <img id="logo-horizontal" src="assets/imagens/LOGO benedere horizontal.png">
+                </a>
+            </div>
+            
+            <!-- Usando <ul> para a lista de links de navegação -->
+            <nav>
+                <ul class="menu-paginas">
+                    <li><a href="ativi1-sobre.html">Sobre a Benedere</a></li>
+                    <li><a href="ativ1-cadastrocliente.html">Cadastre-se</a></li>
+                    <li><a href="ativ1-login.html">Login</a></li>
+                    <li><a href="ativ1-cardapio.html">Cardápio</a></li>
+                    <li><a href="ativ1-fichatecnica.html">Fichas Técnicas</a></li>
+                    <li><a href="ativ1-personalizadas.html">Dietas Personalizadas</a></li>
+                    <li><a href="ativi1-tabelanutricional.html">Tabela Nutricional</a></li>
+                </ul>
+            </nav>
+        </header> <!-- Fechei com header, que é mais semântico para um menu principal -->
     </body>
-</html> 
+</html>
