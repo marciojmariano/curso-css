@@ -8,14 +8,47 @@
         <link rel="stylesheet" href="assets/css/index.css">
     </head>
     <body>
-        <header class="menu">
-            <div class="menu-voltar">
-                <!-- O ideal é que o "voltar" seja o logo do site -->
-                <a href="index.html">
-                    <img id="logo-horizontal" src="assets/imagens/LOGO benedere horizontal.png">
-                </a>
+        <header>
+            <div class="header-contato">
+                <div>
+                    <ul class="header-contato-canais">
+                        <li><a href="fale-conosco.html" target="_blank">Fale Conosco</a></li>
+                        <li>Telefone: (47) 99958-3976</li>
+                        <li><a href="https://wa.me/47999296663" target="_blank">Whatsapp:: (47) 99958-3976</a></li> 
+                    </ul>   
+                </div>
+                <div>
+                    <ul class="header-contato-redessociais">
+                        <li><a href="https://www.facebook.com/benederecomidadeverdade" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/benederecomidadeverdade/" target="_blank">Insta</a></li>
+                    </ul>
+                </div>
             </div>
-            
+            <div class="header-cliente">
+                <div class="header-cliente-logo">
+                    <a href="index.html">
+                        <img id="logo-horizontal" src="assets/imagens/LOGO benedere horizontal.png">
+                    </a>
+                </div>
+                 <form class="header-busca" role="search">
+                    <input type="search" name="s" placeholder="Buscar produtos..." aria-label="Campo de busca">
+                        <button type="submit" aria-label="Buscar">
+                            <!-- Usando um SVG para o ícone de lupa, que é a melhor prática hoje -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                </form>
+                <div>
+                    <ul class="header-cliente-acoes">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="login.html">Lista de Desejos</a></li>
+                        <li><a href="login.html">Carrinho</a></li>
+                    </ul>
+                </div>
+                
+            </div>          
             <!-- Usando <ul> para a lista de links de navegação -->
             <nav>
                 <ul class="menu-paginas">

@@ -26,6 +26,35 @@ ul {
     padding: 10px 20px; /* Adiciona um espaçamento interno no menu */
 }
 
+
+.header-contato {
+    display: flex; /* Torna os <li> flex-items */
+    gap: 15px; /* Cria espaço entre os links */
+}
+
+.header-contato-canais {
+    display: flex; /* Torna os <li> flex-items */
+    gap: 15px; /* Cria espaço entre os links */
+}
+
+.header-contato-redessociais {
+    display: flex; /* Torna os <li> flex-items */
+    gap: 15px; /* Cria espaço entre os links */
+}
+
+.header-cliente {
+    display: flex; /* Torna os <li> flex-items */
+    justify-content: space-between;
+}
+.header-cliente-acoes{
+    display: flex; /* Torna os <li> flex-items */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px; /* Cria espaço entre os links */
+    margin-right: 15px;
+}
+
 /* A lista de links de navegação */
 .menu-paginas {
     display: flex; /* Torna os <li> flex-items */
@@ -59,4 +88,48 @@ ul {
 #logo-horizontal {
     height: 40px;
     margin-left: 10px;
+}
+
+/* --- NOVOS ESTILOS PARA O CAMPO DE BUSCA --- */
+
+/* O contêiner do formulário */
+.header-busca {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Faz o campo de busca ocupar o espaço disponível */
+    max-width: 500px; /* Define uma largura máxima para não ficar gigante em telas largas */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Bordas arredondadas para o contêiner */
+    overflow: hidden; /* Garante que o botão não "vaze" das bordas arredondadas */
+}
+
+/* O campo de input */
+.header-busca input[type="search"] {
+    border: none;
+    outline: none; /* Remove a borda azul ao focar */
+    padding: 10px 15px;
+    width: 100%; /* Ocupa todo o espaço dentro do form */
+    font-size: 1em;
+    background: transparent;
+}
+
+/* O botão de busca */
+.header-busca button {
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.header-busca button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo do ícone SVG */
+.header-busca button svg {
+    stroke: #333; /* Cor da linha do ícone */
 }
