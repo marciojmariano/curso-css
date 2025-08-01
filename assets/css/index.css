@@ -29,7 +29,19 @@ ul {
 
 .header-contato {
     display: flex; /* Torna os <li> flex-items */
+    align-items: center;
+    justify-content: space-between;
     gap: 15px; /* Cria espaço entre os links */
+    padding: 10px 15px 10px 15px;
+    font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
+    font-weight: 400; /* Usando o peso "Bold" */
+    border-bottom: #ccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.header-contato a:hover {
+    color: #87cc6e;
 }
 
 .header-contato-canais {
@@ -44,7 +56,10 @@ ul {
 
 .header-cliente {
     display: flex; /* Torna os <li> flex-items */
+    align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    padding: 10px 15px 10px 15px;
 }
 .header-cliente-acoes{
     display: flex; /* Torna os <li> flex-items */
@@ -52,9 +67,17 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px; /* Cria espaço entre os links */
-    margin-right: 15px;
 }
 
+.header-cliente-acoes a:hover {
+    color: #87cc6e;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* A lista de links de navegação */
 .menu-paginas {
     display: flex; /* Torna os <li> flex-items */
@@ -71,12 +94,13 @@ ul {
     border: 1px solid #e75d23;
     border-radius: 4px; /* Cantos levemente arredondados */
     transition: background-color 0.3s, color 0.3s; /* Efeito suave na interação */
+    font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
+    font-weight: 400; /* Usando o peso "Bold" */
 }
 
 /* Efeito visual quando o mouse passa por cima */
 .menu-paginas a:hover {
     background-color: #87cc6e;
-    border: 1px solid #87cc6e;
     color: white;
 }
 
@@ -87,7 +111,6 @@ ul {
 
 #logo-horizontal {
     height: 40px;
-    margin-left: 10px;
 }
 
 /* --- NOVOS ESTILOS PARA O CAMPO DE BUSCA --- */
