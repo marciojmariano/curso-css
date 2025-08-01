@@ -81,6 +81,7 @@ ul {
 /* A lista de links de navegação */
 .menu-paginas {
     display: flex; /* Torna os <li> flex-items */
+    flex-wrap: wrap;
     gap: 15px; /* Cria espaço entre os links */
 }
 
@@ -123,7 +124,7 @@ ul {
     max-width: 500px; /* Define uma largura máxima para não ficar gigante em telas largas */
     border: 1px solid #ccc;
     border-radius: 25px; /* Bordas arredondadas para o contêiner */
-    overflow: hidden; /* Garante que o botão não "vaze" das bordas arredondadas */
+    overflow: hidden; /* Garante que o botão não estoure das bordas arredondadas */
 }
 
 /* O campo de input */
