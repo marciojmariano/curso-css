@@ -25,9 +25,7 @@ ul {
     padding: 10px 15px 10px 15px;
     font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
     font-weight: 300; /* Usando o peso "Bold" */
-    border-bottom-color: #ccc;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom: 1px solid #ccc;
 }
 
 .header-contato a:hover {
