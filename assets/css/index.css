@@ -17,16 +17,6 @@ ul {
     padding: 0;
 }
 
-/* Contêiner principal do menu */
-.menu {
-    background-color: #e75d23;
-    display: flex;
-    justify-content: space-between; /* Empurra os filhos para os extremos */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    padding: 10px 20px; /* Adiciona um espaçamento interno no menu */
-}
-
-
 .header-contato {
     display: flex; /* Torna os <li> flex-items */
     align-items: center;
@@ -34,10 +24,10 @@ ul {
     gap: 15px; /* Cria espaço entre os links */
     padding: 10px 15px 10px 15px;
     font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
-    font-weight: 400; /* Usando o peso "Bold" */
-    border-bottom: #ccc;
-    border-style: solid;
-    border-width: 1px;
+    font-weight: 300; /* Usando o peso "Bold" */
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 .header-contato a:hover {
@@ -73,11 +63,15 @@ ul {
     color: #87cc6e;
 }
 
+/* Contêiner principal do menu */
 .menu {
+    background-color: #e75d23;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 20px; /* Adiciona um espaçamento interno no menu */
 }
+
 /* A lista de links de navegação */
 .menu-paginas {
     display: flex; /* Torna os <li> flex-items */
@@ -105,16 +99,12 @@ ul {
     color: white;
 }
 
-/* Estilo para o link de "Voltar" (opcional, mas bom para consistência) */
-.menu-voltar a {
-    font-weight: bold;
-}
-
 #logo-horizontal {
     height: 40px;
+    padding: 5px 5px 5px;
 }
 
-/* --- NOVOS ESTILOS PARA O CAMPO DE BUSCA --- */
+/* --- ESTILIZAÇÃO PARA O CAMPO DE BUSCA DE PRODUTOS--- */
 
 /* O contêiner do formulário */
 .header-busca {
