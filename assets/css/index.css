@@ -22,9 +22,9 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 15px; /* Cria espaço entre os links */
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px; /* Simplificado: top/bottom left/right */
     font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
-    font-weight: 300; /* Usando o peso "Bold" */
+    font-weight: 300; /* Peso "Light" (não Bold) */
     border-bottom: 1px solid #ccc;
 }
 
