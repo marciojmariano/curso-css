@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Para remover estilos padrão de links e listas */
@@ -17,15 +16,23 @@ ul {
     padding: 0;
 }
 
+#header {
+    font-family: 'Titillium Web', sans-serif;
+}
 .header-contato {
     display: flex; /* Torna os <li> flex-items */
     align-items: center;
     justify-content: space-between;
     gap: 15px; /* Cria espaço entre os links */
     padding: 10px 15px; /* Simplificado: top/bottom left/right */
-    font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
-    font-weight: 300; /* Peso "Light" (não Bold) */
     border-bottom: 1px solid #ccc;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header-contato a, .header-cliente-acoes a{
+    color: #666;
 }
 
 .header-contato a:hover, .header-cliente-acoes a:hover {
@@ -100,6 +107,9 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px; /* Cria espaço entre os links */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -118,6 +128,9 @@ ul {
     display: flex; /* Torna os <li> flex-items */
     flex-wrap: wrap;
     gap: 15px; /* Cria espaço entre os links */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Estilizando os links individualmente para melhor interação */
