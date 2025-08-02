@@ -28,18 +28,15 @@ ul {
     border-bottom: 1px solid #ccc;
 }
 
-.header-contato a:hover {
+.header-contato a:hover, .header-cliente-acoes a:hover {
     color: #87cc6e;
 }
 
-.header-contato-canais {
-    display: flex; /* Torna os <li> flex-items */
-    gap: 15px; /* Cria espaço entre os links */
-}
 
+.header-contato-canais,
 .header-contato-redessociais {
-    display: flex; /* Torna os <li> flex-items */
-    gap: 15px; /* Cria espaço entre os links */
+    display: flex;
+    gap: 15px;
 }
 
 .header-cliente {
@@ -47,8 +44,56 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
 }
+
+#logo-horizontal {
+    height: 40px;
+}
+
+/* --- ESTILIZAÇÃO PARA O CAMPO DE BUSCA DE PRODUTOS--- */
+
+/* O contêiner do formulário */
+.header-cliente-busca {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Faz o campo de busca ocupar o espaço disponível */
+    max-width: 500px; /* Define uma largura máxima para não ficar gigante em telas largas */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Bordas arredondadas para o contêiner */
+    overflow: hidden; /* Garante que o botão não estoure das bordas arredondadas */
+}
+
+/* O campo de input */
+.header-cliente-busca input[type="search"] {
+    border: none;
+    outline: none; /* Remove a borda azul ao focar */
+    width: 100%; /* Ocupa todo o espaço dentro do form */
+    font-size: 1em;
+    background: transparent;
+}
+
+/* O botão de busca */
+.header-cliente-busca button {
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.header-cliente-busca button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo do ícone SVG */
+.header-cliente-busca button svg {
+    stroke: #333; /* Cor da linha do ícone */
+}
+
 .header-cliente-acoes{
     display: flex; /* Torna os <li> flex-items */
     flex-direction: row;
@@ -57,9 +102,7 @@ ul {
     gap: 15px; /* Cria espaço entre os links */
 }
 
-.header-cliente-acoes a:hover {
-    color: #87cc6e;
-}
+
 
 /* Contêiner principal do menu */
 .menu {
@@ -88,60 +131,11 @@ ul {
     border-radius: 4px; /* Cantos levemente arredondados */
     transition: background-color 0.3s, color 0.3s; /* Efeito suave na interação */
     font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
-    font-weight: 400; /* Usando o peso "Bold" */
+    font-weight: 600; /* Usando o peso "Bold" */
 }
 
 /* Efeito visual quando o mouse passa por cima */
 .menu-paginas a:hover {
     background-color: #87cc6e;
     color: white;
-}
-
-#logo-horizontal {
-    height: 40px;
-    padding: 5px 5px 5px;
-}
-
-/* --- ESTILIZAÇÃO PARA O CAMPO DE BUSCA DE PRODUTOS--- */
-
-/* O contêiner do formulário */
-.header-busca {
-    display: flex;
-    align-items: center;
-    flex-grow: 1; /* Faz o campo de busca ocupar o espaço disponível */
-    max-width: 500px; /* Define uma largura máxima para não ficar gigante em telas largas */
-    border: 1px solid #ccc;
-    border-radius: 25px; /* Bordas arredondadas para o contêiner */
-    overflow: hidden; /* Garante que o botão não estoure das bordas arredondadas */
-}
-
-/* O campo de input */
-.header-busca input[type="search"] {
-    border: none;
-    outline: none; /* Remove a borda azul ao focar */
-    padding: 10px 15px;
-    width: 100%; /* Ocupa todo o espaço dentro do form */
-    font-size: 1em;
-    background: transparent;
-}
-
-/* O botão de busca */
-.header-busca button {
-    border: none;
-    background: #f0f0f0;
-    cursor: pointer;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease;
-}
-
-.header-busca button:hover {
-    background-color: #e0e0e0;
-}
-
-/* Estilo do ícone SVG */
-.header-busca button svg {
-    stroke: #333; /* Cor da linha do ícone */
 }
