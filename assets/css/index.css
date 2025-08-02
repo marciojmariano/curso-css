@@ -18,6 +18,7 @@ ul {
 
 #header {
     font-family: 'Titillium Web', sans-serif;
+    color: #666;
 }
 .header-contato {
     display: flex; /* Torna os <li> flex-items */
