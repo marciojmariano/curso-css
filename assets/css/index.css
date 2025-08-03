@@ -2,12 +2,14 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: #666;
 }
 
 /* Para remover estilos padrão de links e listas */
 a {
     text-decoration: none; /* Remove o sublinhado */
-    color: #333; /* Define uma cor padrão para os links */
+    color: #666;; /* Define uma cor padrão para os links */
 }
 
 ul {
@@ -31,9 +33,6 @@ ul {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-}
-.header-contato a, .header-cliente-acoes a{
-    color: #666;
 }
 
 .header-contato a:hover, .header-cliente-acoes a:hover {
@@ -144,12 +143,53 @@ ul {
     border: 1px solid #e75d23;
     border-radius: 4px; /* Cantos levemente arredondados */
     transition: background-color 0.3s, color 0.3s; /* Efeito suave na interação */
-    font-family: 'Poppins', sans-serif; /* Usando Poppins para títulos */
-    font-weight: 600; /* Usando o peso "Bold" */
 }
 
 /* Efeito visual quando o mouse passa por cima */
 .menu-paginas a:hover {
     background-color: #87cc6e;
     color: white;
+}
+
+.titulo-1 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.8em; /* Fonte menor para telas menores */
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical em telas menores */
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column; /* Cards empilhados */
+        align-items: center;
+    }
+}
+
+/* Para telas com largura máxima de 480px (Celulares Pequenos) */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1.5em; /* Ainda menor para celulares */
+        padding: 10px;
+    }
+
+    body {
+        font-size: 0.9em; /* Texto base um pouco menor */
+    }
 }
